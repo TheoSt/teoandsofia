@@ -405,23 +405,23 @@ img {
   @media all and (max-width: 1160px) {
     .section-2 {
       margin: 0 0 80px; } }
-  .section-2 > .section-2-intro-title {
+  .section-2 .section-2-intro-title {
     text-align: center;
     padding: 0 25% 20px; }
     @media all and (max-width: 960px) {
-      .section-2 > .section-2-intro-title {
+      .section-2 .section-2-intro-title {
         padding: 0 16.66667% 20px; } }
     @media all and (max-width: 660px) {
-      .section-2 > .section-2-intro-title {
+      .section-2 .section-2-intro-title {
         padding: 0 20px 20px; } }
-  .section-2 > .section-2-intro-text {
+  .section-2 .section-2-intro-text {
     padding: 0 25% 80px;
     text-align: center; }
     @media all and (max-width: 960px) {
-      .section-2 > .section-2-intro-text {
+      .section-2 .section-2-intro-text {
         padding: 0 16.66667% 80px; } }
     @media all and (max-width: 660px) {
-      .section-2 > .section-2-intro-text {
+      .section-2 .section-2-intro-text {
         padding: 0 20px 80px; } }
   .section-2 .imgs > .flex {
     align-items: center;
@@ -523,15 +523,7 @@ img {
 .section-3 {
   width: 100%;
   position: relative;
-  overflow: hidden;
-  /* .svg-container {
-        
-
-        svg {
-            width: 100%;
-            height: 100%;
-        }
-    } */ }
+  overflow: hidden; }
   .section-3 .section-3-title {
     padding: 200px 20px 100px;
     text-align: center; }
@@ -548,25 +540,11 @@ img {
     right: 0;
     bottom: 0;
     z-index: 1; }
-  .section-3 .block-3 {
-    margin: 0; }
-    .section-3 .block-3 > .flex {
-      margin: 0 0 25vh;
-      /* @media all and (max-width:1440px) {
-                margin: 0 0 80px;
-            }
-            @media all and (max-width:1160px) {
-                margin: 0 0 40px;
-            }
-            @media all and (max-width:960px) {
-                margin: 0 0 25vw;
-            }
-            @media all and (max-width:660px) {
-                margin: 0 0 33.33333vh;
-            } */ }
-      @media all and (max-width: 960px) {
-        .section-3 .block-3 > .flex {
-          margin: 0 0 120px; } }
+  .section-3 .block-2 {
+    margin: 0 0 25vh; }
+    @media all and (max-width: 960px) {
+      .section-3 .block-2 {
+        margin: 0 0 120px; } }
   .section-3 .block-3-big-title {
     text-align: center;
     margin: 0 0 25vh; }
