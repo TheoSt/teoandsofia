@@ -20,19 +20,9 @@ var x = setInterval(function () {
   document.querySelector(".hours__text").textContent = hours;
   document.querySelector(".mins__text").textContent = minutes;
   document.querySelector(".secs__text").textContent = seconds;
-
-  // If the count down is finished, write some text 
-  /* if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  } */
 }, 1000);
 
 window.addEventListener("DOMContentLoaded", () => {
-  //const svgPath2 = document.querySelector('#scroll-line-2')
-  // const svg2 = scrollSvg(svgPath2,{draw_origin:0.5})
-
-
   document.querySelector(".section-3").style.height = `${document.querySelector(".blocks").getBoundingClientRect().height + document.querySelector(".section-3-title").getBoundingClientRect().height}px`;
 
   mm.add("(min-width:961px)", () => {

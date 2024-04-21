@@ -603,17 +603,14 @@ img {
                     background-image:url('../imgs/teo_1.jpg');
                     height: 40vh;
                     min-height: 430px;
-                    @media all and (max-width:1160px) {
-                        min-height: 470px;
-                    }
                     @media all and (max-width:960px) {
                         /* height: 65vw;
                         min-height: 500px; */
-                        height: 50vw;
+                        height:45vw;
                         min-height: 400px;
                     }
                     @media all and (max-width:660px) {
-                        height: 65vw;
+                        height: calc(100vw - 40px);
                         min-height: unset;
                     }
                 }
@@ -665,17 +662,13 @@ img {
                     background-image:url('../imgs/sofia_1.jpg');
                     height: 40vh;
                     min-height: 430px;
-                    @media all and (max-width:1160px) {
-                        min-height: 470px;
-                    }
                     @media all and (max-width:960px) {
-                      /*   height: 65vw;
-                        min-height: 500px; */
-                        height: 50vw;
+                        height: 45vw;
                         min-height: 400px;
                         
                     }
                     @media all and (max-width:660px) {
+                        height: calc(100vw - 40px);
                         min-height: unset;
                     }
                 }
@@ -897,6 +890,9 @@ img {
         ul {
             list-style-position: inside;
             padding: 0 0 20px;
+            width: fit-content;
+            margin: 0 auto;
+            text-align: left;
 
             li {
                 padding: 0 0 5px;

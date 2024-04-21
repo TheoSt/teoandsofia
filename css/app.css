@@ -482,18 +482,15 @@ img {
         background-image: url("../imgs/teo_1.jpg");
         height: 40vh;
         min-height: 430px; }
-        @media all and (max-width: 1160px) {
-          .section-2 .imgs > .flex .col-1 .bg-image {
-            min-height: 470px; } }
         @media all and (max-width: 960px) {
           .section-2 .imgs > .flex .col-1 .bg-image {
             /* height: 65vw;
                         min-height: 500px; */
-            height: 50vw;
+            height: 45vw;
             min-height: 400px; } }
         @media all and (max-width: 660px) {
           .section-2 .imgs > .flex .col-1 .bg-image {
-            height: 65vw;
+            height: calc(100vw - 40px);
             min-height: unset; } }
     .section-2 .imgs > .flex .col-2 {
       width: 16.66667%;
@@ -535,17 +532,13 @@ img {
         background-image: url("../imgs/sofia_1.jpg");
         height: 40vh;
         min-height: 430px; }
-        @media all and (max-width: 1160px) {
-          .section-2 .imgs > .flex .col-3 .bg-image {
-            min-height: 470px; } }
         @media all and (max-width: 960px) {
           .section-2 .imgs > .flex .col-3 .bg-image {
-            /*   height: 65vw;
-                        min-height: 500px; */
-            height: 50vw;
+            height: 45vw;
             min-height: 400px; } }
         @media all and (max-width: 660px) {
           .section-2 .imgs > .flex .col-3 .bg-image {
+            height: calc(100vw - 40px);
             min-height: unset; } }
 
 .section-3 {
@@ -715,7 +708,10 @@ img {
     margin: 0 0 18px; }
   .gamos__texts .texts ul {
     list-style-position: inside;
-    padding: 0 0 20px; }
+    padding: 0 0 20px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left; }
     .gamos__texts .texts ul li {
       padding: 0 0 5px; }
       @media all and (max-width: 660px) {
