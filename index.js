@@ -22,7 +22,7 @@ var x = setInterval(function () {
   document.querySelector(".secs__text").textContent = seconds;
 }, 1000);
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   document.querySelector(".section-3").style.height = `${document.querySelector(".blocks").getBoundingClientRect().height + document.querySelector(".section-3-title").getBoundingClientRect().height}px`;
 
   mm.add("(min-width:961px)", () => {
