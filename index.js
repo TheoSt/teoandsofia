@@ -35,17 +35,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector(".section-3").style.height = `${document.querySelector(".blocks").getBoundingClientRect().height + document.querySelector(".section-3-title").getBoundingClientRect().height}px`;
 
-  gsap.to(".section-1 .invitation", {
-    x: () => -document.querySelector(".section-1").getBoundingClientRect().width,
-    y: () => document.querySelector(".section-1").getBoundingClientRect().height,
-    scrollTrigger: {
-      trigger: ".section-1",
-      start: "top top",
-      end: () => document.querySelector(".section-1").getBoundingClientRect().height * 1.25,
-      scrub: 1
-    }
-  })
   mm.add("(min-width:961px)", () => {
+    gsap.to(".section-1 .invitation", {
+      x: () => -document.querySelector(".section-1").getBoundingClientRect().width,
+      y: () => document.querySelector(".section-1").getBoundingClientRect().height,
+      scrollTrigger: {
+        trigger: ".section-1",
+        start: "top top",
+        end:"+=1000px",
+        //end: () => document.querySelector(".section-1").getBoundingClientRect().height * 1.25,
+        scrub: 1
+      }
+    })
+
     gsap.to(".heart", {
       motionPath: {
         path: "#scroll-line-2",
@@ -73,6 +75,18 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   mm.add("(max-width:960px)", () => {
+    gsap.to(".section-1 .invitation", {
+      x: () => -document.querySelector(".section-1").getBoundingClientRect().width,
+      y: () => document.querySelector(".section-1").getBoundingClientRect().height,
+      scrollTrigger: {
+        trigger: ".section-1",
+        start: "top top",
+        end:"+=500px",
+        //end: () => document.querySelector(".section-1").getBoundingClientRect().height * 1.25,
+        scrub: 1
+      }
+    })
+
     gsap.to(".heart", {
       motionPath: {
         path: "#scroll-line-2",

@@ -249,6 +249,10 @@ img {
     padding: 0 0 20px; }
     .section-1 .invitation > dotlottie-player {
       margin: 0 auto; }
+      @media all and (max-width: 960px) {
+        .section-1 .invitation > dotlottie-player {
+          width: 100px !important;
+          height: 100px !important; } }
   .section-1 > div:first-of-type {
     height: 60vh;
     position: relative;
@@ -260,7 +264,7 @@ img {
         min-height: 500px; } }
     @media all and (max-width: 660px) {
       .section-1 > div:first-of-type {
-        height: 100vh; } }
+        height: 65vw; } }
     .section-1 > div:first-of-type:before {
       content: '';
       position: absolute;
