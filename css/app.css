@@ -74,6 +74,9 @@
 
 html {
   font-size: 18px; }
+  @media all and (max-width: 960px) {
+    html {
+      font-size: 16px; } }
 
 body {
   position: relative;
@@ -85,6 +88,9 @@ body {
   background: #f5f7fd;
   color: #000;
   transition: opacity 0.75s; }
+  @media all and (max-width: 960px) {
+    body {
+      line-height: 20px; } }
 
 h1 {
   font-size: 60px;
@@ -102,8 +108,8 @@ h1 {
       line-height: 48px; } }
   @media all and (max-width: 960px) {
     h1 {
-      font-size: 43px;
-      line-height: 43px; } }
+      font-size: 40px;
+      line-height: 40px; } }
   @media all and (max-width: 660px) {
     h1 {
       font-size: 38px;
@@ -125,8 +131,8 @@ h2 {
       line-height: 34px; } }
   @media all and (max-width: 960px) {
     h2 {
-      font-size: 24px;
-      line-height: 31px; } }
+      font-size: 22px;
+      line-height: 29px; } }
 
 h3, .h3 {
   font-family: 'Font-Medium';
@@ -171,19 +177,10 @@ img {
   height: auto; }
 
 .block {
-  margin: 0 0 50vh; }
+  margin: 0 0 25vh; }
   @media all and (max-width: 1440px) {
     .block {
       margin: 0 0 80px; } }
-  @media all and (max-width: 1160px) {
-    .block {
-      margin: 0 0 40px; } }
-  @media all and (max-width: 960px) {
-    .block {
-      margin: 0 0 25vw; } }
-  @media all and (max-width: 660px) {
-    .block {
-      margin: 0 0 40px; } }
   .block.reverse > .flex {
     flex-direction: row-reverse; }
     @media all and (max-width: 660px) {
@@ -218,6 +215,9 @@ img {
           padding: 0 0 40px; } }
     .block .col-1 .text {
       padding: 0 calc(1/6 * 100%) 0 0; }
+      @media all and (max-width: 960px) {
+        .block .col-1 .text {
+          padding: 0; } }
       @media all and (max-width: 660px) {
         .block .col-1 .text {
           text-align: center;
@@ -233,7 +233,7 @@ img {
 
 .section-1 {
   position: relative;
-  margin: 0 0 14.84375vw;
+  margin: 0 0 10.416666vw;
   /*  .bg-image {
         height:60vh;
         background-image: url('../imgs/img_2.png');
@@ -282,6 +282,16 @@ img {
         .section-1 > div:first-of-type video {
           height: 100%;
           width: auto; } }
+    .section-1 > div:first-of-type .bg-image {
+      background-image: url("../imgs/img_2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
   .section-1 .texts {
     position: absolute;
     top: 50%;
@@ -452,8 +462,8 @@ img {
             border: 10px solid #fff; } }
       .section-2 .imgs > .flex .col-1 .bg-image {
         background-image: url("../imgs/teo_1.jpg");
-        height: 55vh;
-        min-height: 580px; }
+        height: 40vh;
+        min-height: 430px; }
         @media all and (max-width: 1160px) {
           .section-2 .imgs > .flex .col-1 .bg-image {
             min-height: 470px; } }
@@ -505,8 +515,8 @@ img {
             border: 10px solid #fff; } }
       .section-2 .imgs > .flex .col-3 .bg-image {
         background-image: url("../imgs/sofia_1.jpg");
-        height: 55vh;
-        min-height: 580px; }
+        height: 40vh;
+        min-height: 430px; }
         @media all and (max-width: 1160px) {
           .section-2 .imgs > .flex .col-3 .bg-image {
             min-height: 470px; } }
@@ -540,17 +550,16 @@ img {
     right: 0;
     bottom: 0;
     z-index: 1; }
-  .section-3 .block-2 {
-    margin: 0 0 25vh; }
-    @media all and (max-width: 960px) {
-      .section-3 .block-2 {
-        margin: 0 0 120px; } }
   .section-3 .block-3-big-title {
     text-align: center;
     margin: 0 0 25vh; }
-    @media all and (max-width: 960px) {
+    @media all and (max-width: 1440px) {
       .section-3 .block-3-big-title {
-        margin: 0 0 120px; } }
+        margin: 0 0 80px; } }
+  .section-3 ul {
+    list-style-type: none; }
+    .section-3 ul li {
+      margin: 0 0 10px; }
 
 .gamos__texts .first__title {
   padding: 0 50% 120px 20px; }
@@ -761,9 +770,16 @@ section:nth-of-type(2n) {
   width: 80px;
   height: 80px;
   margin: -80px auto 0; }
+  @media all and (max-width: 960px) {
+    .heart {
+      width: 60px;
+      height: 60px;
+      margin: -60px auto 0; } }
   @media all and (max-width: 660px) {
     .heart {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      width: 40px;
+      height: 40px; } }
   .heart > div {
     position: absolute;
     top: 50%;
@@ -772,3 +788,9 @@ section:nth-of-type(2n) {
   .heart svg {
     width: 40px;
     height: auto; }
+    @media all and (max-width: 960px) {
+      .heart svg {
+        width: 30px; } }
+    @media all and (max-width: 660px) {
+      .heart svg {
+        width: 20px; } }
