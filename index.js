@@ -4,9 +4,9 @@
 import scrollSvg from './js/scroll-svg.mjs';
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-var countDownDate = new Date("Jun 29, 2024 19:30:00").getTime();
+//var countDownDate = new Date("Jun 29, 2024 19:30:00").getTime();
 const mm = gsap.matchMedia();
-
+/*
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -21,6 +21,7 @@ var x = setInterval(function () {
   document.querySelector(".mins__text").textContent = minutes;
   document.querySelector(".secs__text").textContent = seconds;
 }, 1000);
+*/
 
 window.addEventListener("load", () => {
   document.querySelector(".section-3").style.height = `${document.querySelector(".blocks").getBoundingClientRect().height + document.querySelector(".section-3-title").getBoundingClientRect().height}px`;
