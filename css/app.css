@@ -247,7 +247,8 @@ img {
 
 .section-1 {
   position: relative;
-  margin: 0 0 10.416666vw;
+ //margin: 0 0 10.416666vw;
+margin:0 0 80px;
   /*  .bg-image {
         height:60vh;
         background-image: url('../imgs/img_2.png');
