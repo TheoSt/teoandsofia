@@ -322,7 +322,8 @@ img {
 
 .section-1 {
     position: relative;
-    margin:0 0 10.416666vw;
+    ///margin:0 0 10.416666vw;
+	margin:0 0 80px;
     @media all and (max-width:960px) {
         margin: 0 0 134px;
     }
